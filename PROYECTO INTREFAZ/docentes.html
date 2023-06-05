@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HS</title>
+    <link rel="icon" href="logico.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #695f84">
+    <div class="container-fluidtext">
+      <nav class="navbar navbar-expand-lg navbar-light" id="header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo"
+            ><img src="/image/logo2.png" alt="logo" style="height: 50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: white"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+              <li class="nav-but">
+                <p class="titulo">DOCENTES</p>
+              </li>
+            </ul>
+            <ul></ul>
+            <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
+              <li class="nav-item" id="textos">
+                <a
+                  class="nav-link"
+                  style="color: #fff; font-size: 20px"
+                  href="index.html"
+                  >REGRESAR</a
+                >
+              </li>
+            </ul>
+            <!--
+            <ul class="navlist navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-but">
+                    <a class="btn btn-outline-light" href="#">Sing up</a>
+                  </li>
+                  <li class="nav-but">
+                    <a class="btn btn-outline-light" href="#">Log in</a>
+                  </li>
+            </ul>
+          --></div>
+        </div>
+      </nav>
+    </div>
+    <!------------------------------------NAVBAR--------------------------------------------->
+
+    <!------------------------------------BURBUJAS
+     <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+    
+    --------------------------------------------->
+    <br />
+    <br />
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Turno</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <td>001</td>
+            <td>Daniel</td>
+            <td>Moreno Vega</td>
+            <td>dmv@highschool.edu.mx</td>
+            <td>Matutino</td>
+          </tr>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <td>002</td>
+            <td>José</td>
+            <td>Muñetón Pérez</td>
+            <td>jmp@highschool.edu.mx</td>
+            <td>Matutino</td>
+          </tr>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <td>003</td>
+            <td>Joshua</td>
+            <td>Martínez Delgado</td>
+            <td>jmd@highschool.edu.mx</td>
+            <td>Matutino</td>
+          </tr>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <td>004</td>
+            <td>Ángel</td>
+            <td>García Venegas</td>
+            <td>agv@highschool.edu.mx</td>
+            <td>Vespertino</td>
+          </tr>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <td>005</td>
+            <td>Ivana</td>
+            <td>García García</td>
+            <td>igg@highschool.edu.mx</td>
+            <td>Vespertino</td>
+          </tr>
+          <tr data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <td>006</td>
+            <td>César</td>
+            <td>Rosales Llanos</td>
+            <td>crl@highschool.edu.mx</td>
+            <td>Vespertino</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h4 style="text-align: center">Información</h4>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>Daniel Moreno Vega</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5>
+                  <li>Matemáticas</li>
+                  <li>Química</li>
+                </h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 style="text-align: center">Información</h5>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>José Muñetón Pérez</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5>
+                  <li>Español</li>
+                  <li>Inglés</li>
+                </h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 style="text-align: center">Información</h5>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>Joshua Martínez Delgado</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5>
+                  <li>Historia</li>
+                  <li>Formación cívica y ética</li>
+                </h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 style="text-align: center">Información</h5>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>Ángel García Venegas</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5><li>Educación física</li></h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal5"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 style="text-align: center">Información</h5>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>Ivana García García</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5>
+                  <li>Artes</li>
+                  <li>Tecnología</li>
+                </h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal6"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <h5 style="text-align: center">Información</h5>
+            <div class="modal-body">
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Docente:
+                <h5>César Rosales Llanos</h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Materias impartidas:
+                <h5>
+                  <li>Geografia</li>
+                  <li>Ciencias</li>
+                </h5>
+              </h4>
+              <h4
+                style="
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+              >
+                Grupo asignado:
+                <h5>
+                  <li>1° Grado</li>
+                  <li>2° Grado</li>
+                  <li>3° Grado</li>
+                </h5>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
