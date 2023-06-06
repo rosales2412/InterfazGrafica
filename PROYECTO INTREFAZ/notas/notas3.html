@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HS</title>
-    <link rel="icon" href="logico.ico" />
+    <link rel="icon" href="logico.ico" /> 
     <link rel="stylesheet" href="/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -35,16 +35,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
               <li class="nav-but">
-                <p class="titulo">2° GRADO</p>
+                <p class="titulo">CALIFICACIONES</p>
               </li>
             </ul>
-            <ul></ul>
             <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
               <li class="nav-item" id="textos">
                 <a
                   class="nav-link"
                   style="color: #fff; font-size: 20px"
-                  href="/grados.html"
+                  href="/grados/1grado.html"
                   >REGRESAR</a
                 >
               </li>
@@ -87,7 +86,7 @@
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        <i class="bi bi-plus-circle"></i> Agregar Alumno
+        <i class="bi bi-plus-circle"></i> Cargar notas
       </button>
     </div>
     <div class="container" style="overflow-y: hidden;">
@@ -96,10 +95,10 @@
           <thead>
             <tr>
               <th>Matricula</th>
-              <th>Nombre Completo</th>
-              <th>Correo</th>
-              <th>Turno</th>
-              <th>Materias</th>
+              <th>Materia 1</th>
+              <th>MAteria 2</th>
+              <th>Materia 3</th>
+              <th>Materia 4</th>
             </tr>
           </thead>
         </div>
@@ -126,7 +125,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <label for="matricula">Matricula: </label>
+                  <label for="matricula">Ingrese Matricula: </label>
                   <input
                     required
                     type="number"
@@ -134,37 +133,49 @@
                     id="matricula"
                     class="form-control"
                   />
-                  <label for="nombre">Nombre completo: </label>
+                  <label for="nombre">Materia 1 (nota): </label>
                   <input
                     required
-                    type="text"
+                    type="number"
                     name="nombre"
                     id="nombre"
                     class="form-control"
+                    pattern="[0-9]{2}"
+                    min="0"
+                    max="10"
                   />
-                  <label for="correo">Correo: </label>
+                  <label for="correo">Materia 2 (nota): </label>
                   <input
                     required
-                    type="text"
+                    type="number"
                     name="correo"
                     id="correo"
                     class="form-control"
+                    pattern="[0-9]{2}"
+                    min="0"
+                    max="10"
                   />
-                  <label for="turno">Turno: </label>
+                  <label for="turno">Materia 3 (nota): </label>
                   <input
                     required
-                    type="text"
+                    type="number"
                     name="turno"
                     id="turno"
                     class="form-control"
+                    pattern="[0-9]{2}"
+                    min="0"
+                    max="10"
                   />
-                  <label for="turno">Cargar materias: </label>
+                  <label for="turno">Materia 4 (nota): </label>
                   <input
                     required
-                    type="text"
+                    type="number"
                     name="materias"
                     id="materias"
                     class="form-control"
+                    pattern="[0-9]{2}"
+                    min="0"
+                    max="10"
                   />
                 </div>
                 <div class="modal-footer">
@@ -176,7 +187,7 @@
                     Cerrar
                   </button>
                   <button type="submit" id="btnGuardar" class="btn btn-primary">
-                    Guardar cambios
+                    Asignar
                   </button>
                 </div>
               </div>
@@ -219,7 +230,7 @@
                     id="matriculaEditar"
                     class="form-control"
                   />
-                  <label for="nombre">Nombre completo: </label>
+                  <label for="nombre">Materia 1 (nota): </label>
                   <input
                     required
                     type="text"
@@ -227,7 +238,7 @@
                     id="nombreEditar"
                     class="form-control"
                   />
-                  <label for="correo">Correo: </label>
+                  <label for="correo">Materia 2 (nota): </label>
                   <input
                     required
                     type="text"
@@ -235,7 +246,7 @@
                     id="correoEditar"
                     class="form-control"
                   />
-                  <label for="turno">Turno: </label>
+                  <label for="turno">Materia 3 (nota): </label>
                   <input
                     required
                     type="text"
@@ -243,7 +254,7 @@
                     id="turnoEditar"
                     class="form-control"
                   />
-                  <label for="turno">Materias agregadas: </label>
+                  <label for="turno">Materia 4 (nota): </label>
                   <input
                     required
                     type="text"
@@ -280,23 +291,16 @@
         <div id="listaTareas"></div>
       </div>
     </div>
-<!----------------------------------------------------------->
-<div class="container-fluid text-center">
-  <div class="row">
-     
-      <div class="container col-xs-12 col-md-12 text-center">
-          <br>
-          <br>
-          <div style="display: inline-block; margin: 0 30px; cursor: pointer;"><a href="/notas/notas1.html"><img src="/image/pencil.png" alt="web" class="w-50" id="boton"></a><h6 style="color: #fff;">CALIFICACIONES</h6></div>
-      </div>
-  </div>
-</div>
+
+
+    <!------------------------------------------------------------->
    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/list.js"></script>
+    <script src="/js/list2.js"></script>
   </body>
 </html>

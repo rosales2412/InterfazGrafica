@@ -3,12 +3,14 @@ let nombre = document.getElementById("nombre");
 let correo = document.getElementById("correo");
 let matricula = document.getElementById("matricula");
 let turno = document.getElementById("turno");
+let materias = document.getElementById("materias");
 
 let formularioEditar = document.getElementById("formularioEditar");
 let nombreEditar = document.getElementById("nombreEditar");
 let correoEditar = document.getElementById("correoEditar");
 let matriculaEditar = document.getElementById("matriculaEditar");
 let turnoEditar = document.getElementById("turnoEditar");
+let editarmaterias = document.getElementById("editarmaterias")
 
 let idTarea = document.getElementById("idTarea");
 
@@ -22,7 +24,8 @@ let agregarDatos = () => {
         nombre: nombre.value,
         correo: correo.value,
         matricula: matricula.value,
-        turno: turno.value
+        turno: turno.value,
+        materias: materias.value
 
     });
     console.log(tareas);
@@ -38,6 +41,7 @@ let resetearFormulario = () => {
     correo.value = '';
     matricula.value = '';
     turno.value='';
+    materias.value='';
 
 }
 
@@ -49,7 +53,7 @@ let mostrarTareas = () => {
          <div class='col-2 border p-3 textoalineado'>
                     <strong>${tarea.matricula}</strong>
                 </div>
-                <div class='col-3 border p-3 textoalineado'>
+                <div class='col-2 border p-3 textoalineado'>
                     <strong>${tarea.nombre}</strong>
                 </div>
                 <div class='col-3 border p-3 textoalineado'>
@@ -58,14 +62,17 @@ let mostrarTareas = () => {
                 <div class='col-2 border p-3 textoalineado'>
                     <strong>${tarea.turno}</strong>
                 </div>
+                <div class='col-2 border p-3 textoalineado'>
+                <strong>${tarea.materias}</strong>
+            </div>
                
-                <div class='col-1 border p-3 text-center'>
+                <div class='col-1 border p-3 text-center textoalinead'>
                     <button class='btn btn-success'
                     onClick="editarTarea(${indice});" 
                     data-bs-toggle="modal" data-bs-target="#exampleModalEditar">
                     <i class="bi bi-pencil"></i> Editar </buttom>
                 </div>
-                <div class='col-1 border p-3 text-center'>
+                <div class='col-1 border p-3 text-center textoalinead'>
                     <button class='btn btn-danger' onClick ="borrarTarea(this,${indice});"><i class="bi bi-trash"></i> Borrar</button>
                 </div>
             </div>
@@ -88,6 +95,7 @@ formularioEditar.addEventListener("submit", (e) => {
     tareas [indice].correo = correoEditar.value;
     tareas [indice].matricula = matriculaEditar.value;
     tareas [indice].turno = turnoEditar.value;
+    tareas [indice].materias = editarmaterias.value;
     mostrarTareas();
     cerrarModalEditar();
 });
@@ -106,6 +114,7 @@ let editarTarea = (indice) => {
     nombreEditar.value = tareas[indice].nombre;
     correoEditar.value = tareas[indice].correo;
     turnoEditar.value = tareas[indice].turno;
+    editarmaterias.value = tareas[indice].materias;
     idTarea.value = indice;
 }
 
